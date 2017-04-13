@@ -1,0 +1,13 @@
+machine:
+  hosts:
+    testhost: 127.0.0.1
+  python:
+    version: 3.5.0
+
+test:
+  override:
+    - date
+    - python --version
+    - cat index.html
+    - sh test.sh
+    - exit 0
